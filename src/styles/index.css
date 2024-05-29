@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-image: url('/bg.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.mainContainer {
+    background-color: rgba(17, 25, 40, .70);
+    backdrop-filter: blur(4px) saturate(200%);
+    border: 1px solid rgba(255, 255, 255, .125);
+}
+
+.userSettingsScroll::-webkit-scrollbar,
+.chatDisplayScroll::-webkit-scrollbar,
+.userListScroll::-webkit-scrollbar {
+    width: 6px;
+}
+
+.userSettingsScroll::-webkit-scrollbar-thumb,
+.chatDisplayScroll::-webkit-scrollbar-thumb,
+.userListScroll::-webkit-scrollbar-thumb {
+    @apply bg-green-700/50 rounded cursor-pointer hover:bg-green-700 duration-200;
+}
+
+.flexCol {
+    @apply flex flex-col;
+}
+
+.iconContainer {
+    @apply flex items-center gap-4;
+}
+
+.icon {
+    @apply w-5 h-5 cursor-pointer;
+}
+
+.messages {
+    @apply w-fit max-w-[70%] flex gap-3 cursor-text;
+}
+
+.ownMessage {
+    @apply self-end flex-row-reverse;
+}
+
+.textResponseContainer {
+    @apply flex-1 flex flex-col gap-1.5;
+}
+
+.textCommon {
+    @apply p-3 rounded-md text-lg text-black;
+}
+
+.senderColor {
+    @apply bg-slate-200/80;
+}
+
+.ownColor {
+    @apply bg-green-600/80;
+}
+
+.messageTime {
+    @apply text-sm text-gray-400 select-none;
+}
+
+.blockUser {
+    @apply px-5 py-2.5 rounded duration-300 text-lg text-white bg-red-500/70 hover:bg-red-500;
+}
+
+.logout {
+    @apply px-5 py-2.5 rounded duration-300 text-lg text-white bg-green-500/70 hover:bg-green-500;
+}
