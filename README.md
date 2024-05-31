@@ -7,3 +7,6 @@
 - npx tailwindcss init -p
 - yarn add @tippyjs/react
 - yarn add emoji-picker-react
+- yarn add react-toastify
+- yarn add firebase
+- yarn add zustand

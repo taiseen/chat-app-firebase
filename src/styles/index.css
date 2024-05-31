@@ -83,3 +83,20 @@ body {
 .logout {
     @apply px-5 py-2.5 rounded duration-300 text-lg text-white bg-green-500/70 hover:bg-green-500;
 }
+
+.authContainer {
+    @apply flex-1 flex flex-col items-center gap-5;
+}
+
+.authForm {
+    @apply flex flex-col items-center justify-center gap-4
+}
+
+.authInput{
+    @apply px-3 py-2 rounded outline-none border-none bg-gray-700/50 w-[360px]
+}
+
+.authBtn{
+    @apply py-2 rounded outline-none bg-green-700/50 w-full duration-300 hover:bg-green-700
+}
+
